@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+    background: url(./image/background.jpg) no-repeat center center / cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container .header-container {
+    background-color: rgba(0, 0, 0, 0.2);
+    width: 400px;
+    height: 40px;
+    padding: 30px;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 40px;
+}
+
+.container .header-container label {
+    background-color: #fff;
+    color: rgb(72, 45, 9);
+    height: 30px;
+    width: 40px;
+    font-size: 25px;
+    padding-left: 10px;
+    border-radius: 20px 0px 0px 20px;
+}
+
+.container .header-container #task {
+    flex: 4;
+    height: 30px;
+    border: none;
+    padding: 10px;
+}
+
+.container .header-container #addBtn {
+    height: 30px;
+    width: 45px;
+    color: #1d901d;
+    background-color: #fff;
+    padding-right: 5px;
+    border-radius: 0px 20px 20px 0px;
+    border: 2px solid #1d901d;
+    cursor: pointer;
+}
+
+.container .header-container #addBtn:hover {
+    background-color: #1d901d;
+    color: #fff;
+}
+
+.container .list-container .task-item {
+    width: 100%;
+    height: 50px;
+    background-color: rgba(0, 0, 0, 0.2);
+    padding: 0px 30px;
+    margin-bottom: 5px;
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container .list-container .task-item p {
+    flex: 4;
+    color: #fff;
+    font-size: 22px;
+}
+
+.container .list-container .task-item button {
+    background: transparent;
+    width: 40px;
+    height: 40px;
+    font-size: 18px;
+    margin-left: 5px;
+    border-radius: 50%;
+    border: 2px solid #fff;
+    cursor: pointer;
+}
+
+.container .list-container .task-item #btnEdit {
+    color: orange;
+    border: 2px solid orange;
+}
+
+
+.container .list-container .task-item #btnEdit:hover {
+    background-color: orange;
+    color: #fff;
+}
+
+.container .list-container .task-item #btnDelete {
+    color: darkred;
+    border: 2px solid darkred;
+}
+
+.container .list-container .task-item #btnDelete:hover {
+    background-color: darkred;
+    color: #fff;
+}

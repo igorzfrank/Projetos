@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    transition: all .2s;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    background: url(./image/background.jpg) no-repeat center center / cover;
+    position: relative;
+}
+
+.header {
+    width: 100vw;
+    height: 100px;
+    padding: 0px 40px;
+    display: flex;
+    justify-content: end;
+}
+
+.header #btnMenu {
+    font-size: 40px;
+    color: #fff;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.header #btnMenu:hover {
+    color: darkgreen;
+}
+
+.main {
+    margin-top: 550px;
+    width: 100%;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.main h1 {
+    background-color: rgba(0, 0, 0, 0.1);
+    color: #fff;
+    font-size: 70px;
+    padding: 30px 150px;
+    border: 2px solid white;
+    border-radius: 100px;
+    box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.3);
+}
+
+.modal-container {
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0px;
+    background-color: rgba(0, 0, 0, 0.2);
+    display: none;
+    align-items: center;
+    justify-content: center;
+}
+
+.modal-container .container {
+    width: 400px;
+    height: 300px;
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+
+    animation: modalReveal .5s;
+}
+
+.modal-container .container i {
+    font-size: 30px;
+    color: darkgreen;
+    position: absolute;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    cursor: pointer;
+}
+
+.modal-container .container i:hover {
+    color: #fff;
+}
+
+.modal-container .container label {
+    font-size: 18px;
+    color: #fff;
+    margin: 10px 0px;
+}
+
+.modal-container .container input {
+    background: transparent;
+    border-radius: 10px;
+    width: 60%;
+    height: 30px;
+    margin-bottom: 10px;
+}
+
+.modal-container .container #btnAcessar {
+    margin-top: 20px;
+    color: #fff;
+    width: 100px;
+    height: 30px;
+    border: 2px solid rgba(255, 255, 255, 0.5);
+    border-radius: 15px;
+    background-color: rgba(0, 57, 0, 0.415);
+    cursor: pointer;
+}
+
+.modal-container .container #btnAcessar:hover {
+    background-color: rgba(0, 57, 0);
+}
+
+@keyframes modalReveal {
+    0% {
+        top: -300px;
+        opacity: 0;
+    }
+
+    100% {
+        top: 0%;
+        opacity: 1;
+    }
+}

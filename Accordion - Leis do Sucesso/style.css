@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    transition: all .5s;
+}
+
+body {
+    background: url(./image/background.jpg) no-repeat;
+    background-size: cover;
+    background-position: center center;
+    height: 120vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    background-color: #403036;
+    width: 50vw;
+    padding: 50px 60px;
+    border-radius: 30px;
+}
+
+.container .title-container {
+    text-align: center;
+    color: #F2F2F2;
+    text-transform: uppercase;
+}
+
+.container .content-container .title-content {
+    color: #A4A3BF;
+    font-size: 18px;
+    font-weight: 500;
+    padding: 10px 0px;
+    margin: 15px 0px;
+    border-bottom: 2px solid #0D0D0D;
+    position: relative;
+    cursor: pointer;
+}
+
+.container .content-container .title-content:hover {
+    color: #F2F2F2;
+}
+
+.container .content-container .title-content::after {
+    content: '+';
+    right: 0;
+    color: #A4A3BF;
+    position: absolute;
+}
+
+.container .content-container .content-content {
+    display: none;
+}
+
+.container .content-container .content-content p{
+    color: #F2F2F2;
+    font-size: 14px;
+    text-align: justify;
+    line-height: 1.5;
+}
+
+.container .content-container .content-content p span {
+    color: #A4A3BF;
+    font-weight: 600;
+}
+
+.container .content-container.is-active .content-content {
+    display: block;
+}
+
+.container .content-container.is-active .title-content::after {
+    content: '-';
+}
