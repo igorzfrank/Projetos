@@ -1,8 +1,16 @@
 const addBtn = document.getElementById('addBtn');
 const listContainer = document.querySelector('.list-container');
 const taskInput = document.getElementById('task');
+const errorModal = document.querySelector('.error-modal')
+const closeModalBtn = document.getElementById('btn-close-modal');
 
 addBtn.addEventListener('click', function(){
+
+    if(taskInput.value == '') {
+        errorModal.style.display = 'flex';
+        return 0;
+    }
+
     let div = document.createElement('div');
     div.classList.add('task-item')
 
@@ -37,4 +45,8 @@ addBtn.addEventListener('click', function(){
         console.log(e.currentTarget.parentElement)
         e.currentTarget.parentElement.remove();
     })
+})
+
+closeModalBtn.addEventListener('click', function(){
+    errorModal.style.display = 'none';
 })
