@@ -159,7 +159,7 @@ function pokeMemory() {
         poke.src = 'imagens/pokeball.png'
         poke.classList.add('poke-img')
         poke.setAttribute('data-id', i)
-        poke.setAttribute('class', 'poke-img')
+        poke.setAttribute('id', pokemons[i].nome)
         pokeContainer.appendChild(poke)
         poke.addEventListener('click', flip);
     }
@@ -207,3 +207,21 @@ function pokeCheck() {
         playerChoice = [];
     }
 }
+
+// Audio
+
+const playBtn = document.querySelector('.btn-play');
+const pauseBtn = document.querySelector('.btn-pause');
+const audio = document.querySelector('.audio');
+
+pauseBtn.addEventListener('click', function(){
+    audio.pause();
+    pauseBtn.style.display = 'none'
+    playBtn.style.display = 'block'
+})
+
+playBtn.addEventListener('click', function(){
+    audio.play();
+    playBtn.style.display = 'none'
+    pauseBtn.style.display = 'block'
+})
