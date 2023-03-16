@@ -1,0 +1,40 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: url(./imagens/background.jpg) no-repeat center / cover;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    /* flex-direction: column; */
+    align-items: center;
+    justify-content: center;
+}
+
+.logo {
+    width: 300px;
+    position: absolute;
+    top: 5%;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+.poke-container {
+    background-color: rgba(255, 255, 255, 0.3);
+    width: 490px;
+    height: 490px;
+    padding: 20px;
+    border-radius: 20px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.poke-img {
+    width: 75px;
+    height: 75px;
+    padding: 3px;
+    border-radius: 50%;
+}
