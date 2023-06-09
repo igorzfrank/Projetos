@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Player</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <img src="./image/capa-01.png" class="img" alt="">
+        <div class="controls">
+            <div class="time">
+                <input type="range" class="timeRange" name="" id="" min="0" max="100" value="0">
+                <p><span class="currentTime">00:00</span> / <span class="fullTime">00:00</span></p>
+            </div>
+            <div class="buttons">
+                <button class="prev btn"><i class="fa-solid fa-backward"></i></button>
+                <button class="play btn"><i class="fa-solid fa-play"></i></button>
+                <button class="pause btn off"><i class="fa-solid fa-stop"></i></button>
+                <button class="next btn"><i class="fa-solid fa-forward"></i></button>
+            </div>
+        </div>
+    </div>
+    <audio class="audio">
+        <source class="audioSource" src="./music/music-01.mp3" type="audio/mpeg">
+    </audio>
+    <script src="script.js"></script>
+    <script src="https://kit.fontawesome.com/654ec39a63.js" crossorigin="anonymous"></script>
+</body>
+</html>
